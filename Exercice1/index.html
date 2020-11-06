@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript - Partie 5 - Exercice 1</title>
+</head>
+
+<body>
+    <!-- Créer un formulaire demandant un mot de passe et une confirmation de mot de passe et comportant un bouton.
+Au clic sur le bouton, si les deux champs sont identiques, les entourer de vert. Sinon les entourer en rouge.
+ -->
+
+    <!-- starting form -->
+
+    <!-- onbutton plutôt que onsubmit car ici on ne veut pas envoyer l'info. On fait le lien avec la function, ici "verif_password" -->
+    <form onbutton="verif_password()" class="firstForm">
+
+        <label for="password">Enter your password :</label>
+        <input type="password" name="password" id="password" required>
+
+
+        <label for="password2">Confirm your password :</label>
+        <input type="password" name="password2" id="password2" required>
+
+
+        <input type="button" value="Confirm !" onclick="verif_password()">
+
+    </form>
+    <!-- End form -->
+
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Javascript - Partie 5 - Exercice 3</title>
+</head>
+
+<body>
+    <!-- Créer un formulaire contenant un champ nom, un champ mail et un champ age.
+
+    Si les champs ne correspondent pas à une regex, afficher un message d'erreur en rouge sous le champs dès que l'on entre une valeur. -->
+
+    <h1 class="col-md-12 text-center bg-primary" my-5>Expressions Régulières</h1>
+
+    <!-- starting form -->
+
+    <!-- onbutton plutôt que onsubmit car ici on ne veut pas envoyer l'info. On fait le lien avec la function, ici "verif_password" -->
+    <div class="container"></div>
+    <div class="raw">
+        <form class="col-12 text-center" id="formFocus" action="" onbutton="verif_information()">
+
+            <p> <label for="name">Enter your name :</label>
+                <input type="text" name="name" id="inputName" required>
+                <span id="errorName"></span>
+            </p>
+            <p>
+                <label for="mail">Enter your mail :</label>
+                <input type="email" name="mail" id="inputMail" required>
+                <span id="errorMail"></span>
+            </p>
+            <P>
+                <label for="age">Your age:</label>
+                <input type="text" name="age" id="inputAge" required>
+                <span id="errorAge"></span>
+            </p>
+            <input type="button" value="Valider" id="button">
+        </form>
+    </div>
+    </div>
+    <!-- End form -->
+
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

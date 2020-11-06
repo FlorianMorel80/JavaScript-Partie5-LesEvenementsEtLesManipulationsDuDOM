@@ -1,0 +1,14 @@
+/* On crée d'abord les class CSS que lon va ensuite ajouter sur le JS, après la variable : className = ''; */
+
+.valid {
+    color: green;
+    border-color: green;
+}
+
+
+/*On peut mettre border-color ou outline-color */
+
+.invalid {
+    color: red;
+    border-color: red;
+}
