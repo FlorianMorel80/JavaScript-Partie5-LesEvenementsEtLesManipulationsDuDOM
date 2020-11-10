@@ -22,11 +22,11 @@ function checkName() {
     let errorName = document.getElementById('errorName');
     if (regName.test(inputName.value)) {
         errorName.innerHTML = 'Valid';
-        document.getElementById('errorName').style.color = "green";
+        errorName.style.color = "green";
 
     } else {
         errorName.innerHTML = 'Invalid';
-        document.getElementById('errorName').style.color = "ref";
+        errorName.style.color = "ref";
     };
 }
 //   *************Appel de la fonction Mail*************
@@ -35,12 +35,12 @@ function checkMail() {
     let errorMail = document.getElementById('errorMail');
     if (regMail.test(inputMail.value)) {
         errorMail.innerHTML = 'Mail Valid';
-        document.getElementById('errorMail').style.color = "green";
+        errorMail.style.color = "green";
 
 
     } else {
         errorMail.innerHTML = 'Mail Invalid';
-        document.getElementById('errorMail').style.color = "red";
+        errorMail.style.color = "red";
     };
 }
 //  *************Appel de la fonction Age******************
@@ -49,10 +49,10 @@ function checkAge() {
     let errorAge = document.getElementById('errorAge');
     if (regAge.test(inputAge.value)) {
         errorAge.innerHTML = 'Valid';
-        document.getElementById('errorAge').style.color = "green";
+        errorAge.style.color = "green";
 
     } else {
         errorAge.innerHTML = 'Invalid';
-        document.getElementById('errorAge').style.color = "red";
+        errorAge.style.color = "red";
     };
 }

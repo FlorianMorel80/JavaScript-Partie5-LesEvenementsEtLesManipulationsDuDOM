@@ -1,7 +1,8 @@
-// Focus permet 
-function focusInput() {
-    document.getElementById('formFocus').focus(input);
-}
+// Focus permet de cibler 
+document.getElementById('formFocus').focus(input);
+
+
+
 
 // Déclaration des variables  et Regex pour le champs Name
 let name = document.getElementById('inputName');
